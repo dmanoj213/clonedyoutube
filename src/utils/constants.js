@@ -6,7 +6,7 @@ export const user_logo = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gc
 
 export const search_logo = "https://us.123rf.com/450wm/yoginta/yoginta2301/yoginta230100639/197388928-search-video-symbol-illustration-vector.jpg?ver=6";
 
-const YOUTUBE_API_KEY = "AIzaSyDlXIwuKLpwxJI1Ckj4dErrDblNovzVhco";
+const YOUTUBE_API_KEY = process.env.REACT_APP_YOUTUBE_API_KEY;
 
 export const YOUTUBE_VIDEOS_API = " https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&&maxResults=50&chart=mostPopular&regionCode=IN&key="+ YOUTUBE_API_KEY;
 
